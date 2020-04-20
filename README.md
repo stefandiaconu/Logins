@@ -11,5 +11,8 @@ In progress:
   - improve search filter (when user deletes from the searchbox, the items in the table appear only when the whole word is deleted)
   - let user to delete selected entry
   - encrypt entries stored in csv file
+  - get logins from installed browsers
+  - regex for entries (name, user id and password)
+  - generate random password
 
 Possible upgrade: store entries in database
