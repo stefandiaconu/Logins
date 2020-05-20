@@ -109,7 +109,7 @@ class Contacts():
         self.frame.rowconfigure(4, weight=1)
         self.frame.columnconfigure(0, weight=1)
         self.frame.columnconfigure(1, weight=1)
-        
+
         # create buttons
         self.new_button = ttk.Button(self.frame, text="New", command=self.new_button_clicked)
         self.new_button.grid(column=0, row=0)
@@ -275,9 +275,9 @@ class New_User(Toplevel):
             self.destroy()
             if self.winfo_exists() == 0:
                 login.username_entry.focus()
-                login.check_var.set(0) 
+                login.check_var.set(0)
                 login.username_string.set(self.name_string.get())
-                login.pass_string.set(self.pass_string.get())       
+                login.pass_string.set(self.pass_string.get())
 
     def create_widgets(self):
         self.name_string = tk.StringVar()
@@ -285,7 +285,7 @@ class New_User(Toplevel):
         self.verify_pass_string = tk.StringVar()
 
         self.info_label = ttk.Label(self, text="Enter name and password to create new entry", wraplength=200)
-        self.info_label.grid(column=0, row=0, columnspan=2)  
+        self.info_label.grid(column=0, row=0, columnspan=2)
         self.name_label = ttk.Label(self, text="Name")
         self.name_label.grid(column=0, row=1)
         self.name_entry = ttk.Entry(self, textvariable=self.name_string)
